@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <!-- Faz a página se adaptar a celulares, tablets e computadores. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o texto que aparece na aba do navegador. -->
+    <title>Meus sites favoritos</title>
+
+    <style>
+        /* Define o estilo básico de toda a página. */
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #243247;
+            background: #f2f5f9;
+        }
+
+        /* Cabeçalho com o título principal da atividade. */
+        header {
+            background: linear-gradient(135deg, #173b68, #2477a8);
+            color: white;
+            text-align: center;
+            padding: 36px 16px;
+        }
+        header h1 { margin: 0 0 10px; font-size: clamp(1.8rem, 4vw, 2.6rem); }
+        header p { margin: 0; }
+
+        /* Organiza os cinco sites em cartões responsivos. */
+        main { width: min(1100px, 92%); margin: 30px auto; }
+        .sites {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 22px;
+        }
+
+        /* Aparência individual de cada cartão de site. */
+        .cartao {
+            background: white;
+            border-radius: 14px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 14px rgba(20, 45, 75, 0.10);
+            transition: transform 0.2s ease;
+        }
+        .cartao:hover { transform: translateY(-4px); }
+
+        /* O nome de cada site aparece acima da imagem. */
+        .cartao h2 { font-size: 1.25rem; margin: 0 0 14px; }
+        .cartao img {
+            width: 100%;
+            height: 135px;
+            object-fit: contain;
+            border-radius: 8px;
+            background: #f7f9fc;
+            margin-bottom: 14px;
+        }
+
+        /* Deixa os links fáceis de identificar e acessar. */
+        .cartao a { color: #1265a8; font-weight: bold; text-decoration: none; }
+        .cartao a:hover { text-decoration: underline; }
+        footer { text-align: center; padding: 22px 12px; color: #58677a; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <!-- Título do corpo da página, conforme solicitado na atividade. -->
+    <header>
+        <h1>Meus sites favoritos: Matheus Leonardi</h1>
+        <p>Sites úteis para estudar, trabalhar e aprender coisas novas.</p>
+    </header>
+
+    <main>
+        <!-- Cada artigo contém o nome do site, a imagem e seu link. -->
+        <section class="sites" aria-label="Meus cinco sites favoritos">
+            <!-- Site favorito 1: YouTube. -->
+            <article class="cartao">
+                <h2>YouTube</h2>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir YouTube">
+                    <img src="imagens/youtube.svg" alt="Logotipo ilustrado do YouTube">
+                </a>
+                <p><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Acessar YouTube</a></p>
+            </article>
+
+            <!-- Site favorito 2: GitHub, para guardar e compartilhar projetos. -->
+            <article class="cartao">
+                <h2>GitHub</h2>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir GitHub">
+                    <img src="imagens/github.svg" alt="Logotipo ilustrado do GitHub">
+                </a>
+                <p><a href="https://github.com/" target="_blank" rel="noopener noreferrer">Acessar GitHub</a></p>
+            </article>
+
+            <!-- Site favorito 3: Google, para pesquisas. -->
+            <article class="cartao">
+                <h2>Google</h2>
+                <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Google">
+                    <img src="imagens/google.svg" alt="Logotipo ilustrado do Google">
+                </a>
+                <p><a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Acessar Google</a></p>
+            </article>
+
+            <!-- Site favorito 4: W3Schools, para aprender programação web. -->
+            <article class="cartao">
+                <h2>W3Schools</h2>
+                <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir W3Schools">
+                    <img src="imagens/w3schools.svg" alt="Logotipo ilustrado do W3Schools">
+                </a>
+                <p><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">Acessar W3Schools</a></p>
+            </article>
+
+            <!-- Site favorito 5: MDN Web Docs, referência de HTML, CSS e JavaScript. -->
+            <article class="cartao">
+                <h2>MDN Web Docs</h2>
+                <a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer" aria-label="Abrir MDN Web Docs">
+                    <img src="imagens/mdn.svg" alt="Logotipo ilustrado do MDN Web Docs">
+                </a>
+                <p><a href="https://developer.mozilla.org/pt-BR/" target="_blank" rel="noopener noreferrer">Acessar MDN</a></p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Rodapé com a identificação da atividade e do aluno. -->
+    <footer>
+        <p>Agenda 12 — Desenvolvimento de Sistemas I | Matheus Leonardi</p>
+    </footer>
+</body>
+</html>
